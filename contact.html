@@ -29,6 +29,19 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+    <!-- email section  -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "XcvcHIHG6TbDI8-L_",
+  });
+})();
+</script>
+<script src="/js/index.js"></script>
+<!-- end of email section  -->
 
 </head>
 
@@ -58,7 +71,7 @@
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product.html">Products</a>
+                <a class="nav-link" href="product.html">Courses</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="testimonial.html">Testimonial</a>
@@ -115,18 +128,13 @@
                         box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);""></textarea>
               </div>
               <div class="btn_box">
-                <button>SEND</button>
+                <button class="btn_box" onclick="sendMail()">
+                  SEND
+                </button>
               </div>
             </form>
             
 
-          </div>
-        </div>
-        <div class="col-md-6 ">            
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
           </div>
         </div>
       </div>
@@ -203,7 +211,7 @@
             <a href="">
               <img src="images/fb.png" alt="">
             </a>
-            <a href="">
+            <a href="https://x.com/kuumbavideoedit">
               <img src="images/twitter.png" alt="">
             </a>
             <a href="">
